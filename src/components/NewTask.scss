@@ -1,0 +1,39 @@
+.new_task_block {
+  width: calc(100% - 1rem);
+  border: 1px solid rgba(0, 0, 0, 0.38);
+  padding: 0 8px 0 1rem;
+  border-radius: 4px;
+
+  .new_task_label {
+    bottom: 0;
+    font-size: 12px;
+    padding: 0 4px;
+    &.shown {
+      bottom: 15px;
+      animation: float 50ms linear;
+    }
+  }
+}
+
+@keyframes float {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 15px;
+  }
+}
+
+.new_task_input {
+  width: 100%;
+  outline: none;
+  margin-top: 1rem;
+
+  &:focus {
+    margin-top: -8px;
+  }
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.6);
+  }
+}

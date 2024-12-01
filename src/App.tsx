@@ -10,9 +10,9 @@ function App() {
 
       <NewTask />
 
-      <main className="main-content mt-8">
+      {/* <main className="main-content mt-8">
         This will hold the task list <br />
-      </main>
+      </main> */}
     </div>
   );
 }
